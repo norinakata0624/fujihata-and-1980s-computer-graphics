@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>藤幡正樹と80年代コンピュータ・グラフィックス ― NEORT++ リサーチ資料</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4efe4; --panel:#fbf8f1; --ink:#2a2622; --ink-soft:#6f675c;
+    --line:#d8cfbf; --accent:#9c3b27; --accent-soft:#c98a5e;
+    --gothic:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;
+    --mincho:"Hiragino Mincho ProN","Yu Mincho",serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(120% 90% at 50% -10%, #fbf7ee 0%, var(--paper) 55%, #efe7d7 100%);
+    color:var(--ink); font-family:var(--gothic);
+    min-height:100vh; display:flex; align-items:center; justify-content:center;
+    padding:2rem 1.25rem; -webkit-font-smoothing:antialiased;
+  }
+  .card{
+    width:100%; max-width:680px; background:var(--panel);
+    border:1px solid var(--line); border-radius:6px;
+    box-shadow:0 30px 70px -45px rgba(60,40,20,.75);
+    padding:clamp(1.8rem,5vw,3.4rem);
+  }
+  .kicker{
+    font-size:.72rem; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--accent); font-weight:600; margin:0 0 1.1rem;
+  }
+  h1{
+    font-family:var(--mincho); font-weight:600; line-height:1.34;
+    font-size:clamp(1.5rem,4.4vw,2.15rem); margin:0 0 .5rem; letter-spacing:.01em;
+  }
+  .en-title{
+    font-family:"Fraunces",var(--mincho); font-style:italic;
+    color:var(--ink-soft); font-size:clamp(1rem,2.6vw,1.2rem); margin:0 0 1.6rem;
+  }
+  .lead{
+    font-size:.95rem; line-height:1.85; color:var(--ink-soft);
+    margin:0 0 2rem; padding-bottom:1.6rem; border-bottom:1px solid var(--line);
+  }
+  .choices{display:grid; gap:.9rem;}
+  a.choice{
+    display:flex; align-items:baseline; gap:.7rem; text-decoration:none;
+    color:var(--ink); background:#fff; border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:4px;
+    padding:1.05rem 1.25rem; transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  a.choice:hover{ transform:translateY(-2px); box-shadow:0 12px 26px -18px rgba(60,40,20,.6); border-left-color:var(--accent-soft); }
+  a.choice .lang{ font-family:var(--mincho); font-weight:600; font-size:1.12rem; }
+  a.choice .sub{ font-family:"Fraunces",serif; font-style:italic; color:var(--ink-soft); font-size:.9rem; }
+  a.choice .arrow{ margin-left:auto; color:var(--accent); font-weight:600; }
+  .foot{
+    margin-top:2rem; font-size:.74rem; line-height:1.7; color:var(--ink-soft);
+  }
+  .foot strong{ color:var(--accent); font-weight:600; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <p class="kicker">NEORT++ ／ リサーチ資料</p>
+    <h1>藤幡正樹と80年代<br>コンピュータ・グラフィックス</h1>
+    <p class="en-title">Masaki Fujihata and 1980s Computer Graphics</p>
+    <p class="lead">
+      レイトレーシングの時代性、「再現 vs メディア固有の表現」という思想的フレーム、
+      国内外の作家と系譜、発表・展示の場、批評の論点、一次資料の精読、そして80年代を分解するタイムライン。
+      言語を選んでください。
+    </p>
+    <nav class="choices">
+      <a class="choice" href="fujihata_1980s_cg_research.html">
+        <span class="lang">日本語版</span>
+        <span class="sub">Japanese</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="choice" href="fujihata_1980s_cg_research_EN.html">
+        <span class="lang">English</span>
+        <span class="sub">英語版</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </nav>
+    <p class="foot">
+      本資料はリサーチ用ドラフト。各記述の一次確認は次工程で推奨。図版は各HTMLに埋め込み済み（<strong>別ファイル不要</strong>）。<br>
+      &copy; 2026 NEORT++ research draft.
+    </p>
+  </main>
+</body>
+</html>
